@@ -9,22 +9,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="m-auto">
-        <nav class="flex justify-center list-none m-auto">
-            <img src="B12A02-Responsive-Flowers/assets/logo.png" alt="logo">
-            <div class="flex  justify-center items-center m-auto gap-5 mr-96 ">
-            <li>Home</li>
-            <li>shop</li>
-            <li>About Us</li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                </svg>
-                cart
-
-            </li>
-            </div>
-    </header>
+    <header class="w-full bg-white shadow-sm">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img src="B12A02-Responsive-Flowers/assets/logo.png" alt="logo" class="w-24 h-auto">
+    </div>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex items-center gap-8 font-semibold text-gray-700">
+      <li class="hover:text-amber-600 transition cursor-pointer">Home</li>
+      <li class="hover:text-amber-600 transition cursor-pointer">Shop</li>
+      <li class="hover:text-amber-600 transition cursor-pointer">About Us</li>
+      <li class="flex items-center gap-1 hover:text-amber-600 transition cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+        Cart
+      </li>
+    </ul>
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden flex items-center" id="mobile-menu-btn">
+      <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+  <!-- Mobile Menu -->
+  <div class="md:hidden" id="mobile-menu" style="display: none;">
+    <ul class="flex flex-col gap-4 px-6 pb-4 font-semibold text-gray-700 bg-white shadow">
+      <li class="hover:text-amber-600 transition cursor-pointer">Home</li>
+      <li class="hover:text-amber-600 transition cursor-pointer">Shop</li>
+      <li class="hover:text-amber-600 transition cursor-pointer">About Us</li>
+      <li class="flex items-center gap-1 hover:text-amber-600 transition cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+        Cart
+      </li>
+    </ul>
+  </div>
+</header>
+   
     <main>
         <div class="flex m-auto">
             <div class="flex flex-row items-center">
@@ -147,19 +172,18 @@
             
         <!--random-->
         
-         <div class="w-full flex justify-center items-center my-12">
-            <div style="background-image: url(B12A02-Responsive-Flowers/assets/news-letter-bg.png);"></div>
+         <div class="w-full flex justify-center items-center my-12 bg-[url('B12A02-Responsive-Flower/assets/deal-zabo.png ')] size-cover">
 
   <div class="bg-gradient-to-r from-amber-100 via-white to-amber-50 rounded-2xl shadow-lg flex flex-col sm:flex-row items-center gap-4 px-8 py-8 max-w-2xl w-full">
     <input 
       type="search" 
       placeholder="Search for flowers..." 
-      class="flex-1 px-4 py-3 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 transition text-base"
+      class="flex-1 px-4 py-3 rounded-lg border focus:outline-none focus:ring  text-base"
     >
     <button class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-lg transition">
       Subscribe
     </button>
-  </div>
+  </div> 
 </div>
         
     </main>
@@ -197,18 +221,6 @@
     </div>
   </div>
     </footer>
-        <div class="w-full flex justify-center items-center my-12">
-  <div class="bg-gradient-to-r from-amber-100 via-white to-amber-50 rounded-2xl shadow-lg flex flex-col sm:flex-row items-center gap-4 px-8 py-8 max-w-2xl w-full">
-    <input 
-      type="search" 
-      placeholder="Search for flowers..." 
-      class="flex-1 px-4 py-3 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 transition text-base"
-    >
-    <button class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-lg transition">
-      Subscribe
-    </button>
-  </div>
-</div>
-
+    
 </body>
 </html>
