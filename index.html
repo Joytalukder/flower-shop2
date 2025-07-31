@@ -16,7 +16,7 @@
       <img src="B12A02-Responsive-Flowers/assets/logo.png" alt="logo" class="w-24 h-auto">
     </div>
     <!-- Desktop Menu -->
-    <ul class="hidden md:flex items-center gap-8 font-semibold text-gray-700">
+    <ul class="flex hidden md:flex items-center gap-8 font-semibold text-gray-700 ">
       <li class="hover:text-amber-600 transition cursor-pointer">Home</li>
       <li class="hover:text-amber-600 transition cursor-pointer">Shop</li>
       <li class="hover:text-amber-600 transition cursor-pointer">About Us</li>
@@ -29,12 +29,12 @@
     </ul>
    
   <!-- Mobile Menu -->
-  <div class="md:hidden" id="mobile-menu" style="display: none;">
+  <div class="md:hidden" id="mobile-menu" style="display:none;">
     <ul class="flex flex-col gap-4 px-6 pb-4 font-semibold text-gray-700 bg-white shadow">
       <li class="hover:text-amber-600 transition cursor-pointer">Home</li>
       <li class="hover:text-amber-600 transition cursor-pointer">Shop</li>
       <li class="hover:text-amber-600 transition cursor-pointer">About Us</li>
-      <li class="flex items-center gap-1 hover:text-amber-600 transition cursor-pointer">
+      <li class="flex items-center gap-1 hover:text-amber-600 transition cursor-pointer hidden-none">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
         </svg>
@@ -45,14 +45,14 @@
 </header>
    
     <main>
-        <div class="flex m-auto">
-            <div class="flex flex-row items-center">
+        <div class="flex-col items-center justify-center md:flex">
+            <div class="sm:flex flex-col-reverse md:flex flex-row items-center">
                 <div class="mt-24 mx-5">
                 <h3 style="font-weight: bold; font-size: 2rem; color: chocolate;">ALWAYS <span>FRESH</span><br>FLOWERS</h3>
                 <P>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </P>
                 </div>
                 
-                <img class="max" src="B12A02-Responsive-Flowers/assets/hero-flower.png " alt="hero">
+                <img class="max sm:flex-col-reverse" src="B12A02-Responsive-Flowers/assets/hero-flower.png " alt="hero">
             </div>
         </div>
         <!--plants tittle-->
@@ -112,30 +112,30 @@
 </div>
      
         <!--image strick-->
-        <div class="flex flex-col">
-          <div flex>
-                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 items-start">
-                  <div class=" relative">
-                    <img src="B12A02-Responsive-Flowers/assets/flower-store.png" alt="flower" class="w-full rounded shadow-md">
-                  </div>
-                  </div>
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-6 p-8">
+          <div class="relative w-full md:w-1/2">
+            
+            <img src="B12A02-Responsive-Flowers/assets/flower-store.png" alt="flower" class="w-full rounded-lg shadow-md">
+            <div class="absolute top-0 right-0 left-52 -mt-28 -mr-0 hidden md:block">
+            <img src="B12A02-Responsive-Flowers/assets/trusted-badge.png" alt="trusted-badge" class="md:w-96 h-96 ml-20 ">
+          </div>
 
+          </div>
+          <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold text-amber-600 mb-4">flower % Plants <br>Lover</h1>
+            <ul class="space-y-4 text-gray-600 text-sm">
+            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh</li>
+            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh</li>
+            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh</li>
+            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh</li>
+            </ul>
+          </div>
 
-                </div>
-                <div class="space-y-4">
-                  <div class="flex items-center space-x-2">
-                    <img src="B12A02-Responsive-Flowers/assets/trusted-badge.png" alt="trust" class="w-52 h-52">
-                   </div>
-                </div>
-                <h2 class="text-3xl font-bold">Flower& plants <br>lover</h2>
-
-                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-                 <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-
-            </div>
         </div>
+        
+
+            
+        
         <!--latest plants-->
         <div class="text-center items-center justify-center m-auto">
             <h3 class="font-bold text-4xl caret-amber-600"><span class="caret-amber-600">Latest</span>Deals</h3>
@@ -182,7 +182,7 @@
         
     </main>
     <footer>
-      div class="w-full flex justify-center items-center mt-4 my-12">
+      
   <div class="bg-[url('B12A02-Responsive-Flowers/assets/news-letter-bg.png')] bg-cover bg-center rounded-2xl w-full h-96 flex items-center justify-center shadow-lg mx-0">
     <div class="-md rounded-xl flex flex-col sm:flex-row items-center gap-4 px-8 py-8 w-full max-w-2xl mx-auto">
       <input 
